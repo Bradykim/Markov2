@@ -23,12 +23,12 @@ public class EfficientMarkov extends BaseMarkov {
 			String key = myText.substring(i,i+myOrder);
 			if(!myMap.containsKey(key))
 			{
-				myMap.putIfAbsent(key,new ArrayList<>());
+				myMap.put(key,new ArrayList<>());
 				myMap.get(key).add(myText.substring(i+myOrder,i+myOrder+1));
 			}
 			if(i+ myOrder >= myText.length())
 			{
-				myMap.putIfAbsent(key,new ArrayList<>());
+				myMap.put(key,new ArrayList<>());
 				myMap.get(key).add(PSEUDO_EOS);
 				break;
 			}
