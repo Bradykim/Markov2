@@ -29,13 +29,8 @@ public class EfficientWordMarkov extends BaseWordMarkov
                 myMap.put(key,new ArrayList<>());
 
             }
-            if(i== myWords.length-myOrder)
-            {
-                myMap.get(key).add(text);
-            }
-            else{
 
-            }
+
 
         }
 
