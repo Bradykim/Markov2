@@ -31,9 +31,9 @@ public class EfficientMarkov extends BaseMarkov {
 				break;
 			}
 
-			else{
-				myMap.get(key).add(myText.substring(i+myOrder,i+myOrder+1));
-			}
+
+			myMap.get(key).add(myText.substring(i+myOrder,i+myOrder+1));
+
 
 		}
 
