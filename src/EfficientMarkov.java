@@ -24,7 +24,7 @@ public class EfficientMarkov extends BaseMarkov {
 			{
 				myMap.put(key,new ArrayList<>());
 			}
-			if(i+ myOrder >= myText.length()-1)
+			if(i+ myOrder >= myText.length())
 			{
 				myMap.get(key).add(PSEUDO_EOS);
 				break;
